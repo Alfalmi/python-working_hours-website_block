@@ -6,7 +6,8 @@ website_list = ["www.facebook.com",
                 "facebook.com", 
                 "mail.google.com",
                 "www.youtube.com",
-                "www.twitter.com"]
+                "youtube.com",
+                "twitter.com"]
 
 # define day working hours
 from_hour = 9
@@ -47,7 +48,5 @@ while True:
                 if not any(website in line for website in website_list):
                     file.write(line)
             file.truncate()
-        print("Fun Hours", dt.now(), dt(dt.now().year,
-          dt.now().month,
-          dt.now().day, from_hour))
+        print("Fun Hours")
     time.sleep(1)  #seconds
